@@ -50,3 +50,20 @@ while(number.length) number.pop()
 
 
 console.log(number)
+
+const arr2 = [1,2,3];
+const arr3 = [4,5,6];
+
+
+// Concatenate two arrays
+// const arr4 = arr2.concat(arr3);
+// console.log(arr4);
+
+// Spread Operator
+// const arr5 = [...arr2, ...arr3];
+// console.log(arr5);
+
+// Another way to concatenate two arrays
+
+const arr6 = [].concat(arr2, arr3,7,8,9);
+console.log(arr6);
