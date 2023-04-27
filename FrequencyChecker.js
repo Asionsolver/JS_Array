@@ -22,7 +22,7 @@ const votes = [
 
 const getFrequency = votes.reduce((accumulator, currentValue) => {
   if (accumulator[currentValue]) {
-    accumulator[currentValue] += 1;
+    accumulator[currentValue] ++;
   } else {
     accumulator[currentValue] = 1;
   }
