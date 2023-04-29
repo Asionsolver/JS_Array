@@ -56,12 +56,12 @@ const react = {
 
 
 
-const inspectObject = (obj, path) => {
+const inspectObject = (obj, path, returnValue=0) => {
     return path.split('.').reduce((acc, curr) => {
         if (acc[curr]) {
             return acc[curr];
         }
-        return 0;
+        return returnValue;
     }, obj);
 };
 
